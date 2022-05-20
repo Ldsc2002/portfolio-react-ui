@@ -5,7 +5,6 @@ function App() {
         
         <div>
             <p>Hello World</p>
-            <p>Testing deploy</p>
         </div>
     )
 }
