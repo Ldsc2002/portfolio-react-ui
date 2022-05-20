@@ -1,0 +1,12 @@
+{
+    "GitButton": {
+        "url": "https://github.com/Ldsc2002/portfolio-react-ui"
+    },
+    "Landing": {
+        "name": "Luis Santos",   
+        "headerOptions": [
+            "Hello", 1000,
+            "Testing", 1000
+        ]
+    }
+}
