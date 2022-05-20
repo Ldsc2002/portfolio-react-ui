@@ -1,8 +1,8 @@
-import { data } from 'autoprefixer'
 import React from 'react'
+import PropTypes from 'prop-types'
 import classes from '../style/GitHubButton.module.css'
 
-function Landing({ data }) {
+function GitHubButton({ data }) {
     return (
         <div>
             <a href={data.url} className={classes.githubCorner}>
@@ -16,4 +16,10 @@ function Landing({ data }) {
     )
 }
 
-export default Landing
+GitHubButton.propTypes = {
+    data: PropTypes.shape({
+        url: PropTypes.string,
+    }),
+}
+
+export default GitHubButton

@@ -1,6 +1,7 @@
 import React from 'react'
 import TypeAnimation from 'react-type-animation'
 import { Icon } from '@iconify/react'
+import PropTypes from 'prop-types'
 import classes from '../style/Landing.module.css'
 
 function Landing({ data }) {
@@ -20,6 +21,15 @@ function Landing({ data }) {
             </div>
         </div>
     )
+}
+
+Landing.propTypes = {
+    data: PropTypes.shape({
+        name: PropTypes.string,
+        headerOptions: PropTypes.arrayOf(
+            PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+        ),
+    }),
 }
 
 export default Landing
