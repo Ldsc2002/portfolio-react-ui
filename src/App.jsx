@@ -1,10 +1,10 @@
 import React from 'react'
+import Landing from './components/Landing'
 
 function App() {
     return (
-        
-        <div>
-            <p>Hello World</p>
+        <div className="app-container">
+            <Landing />
         </div>
     )
 }
