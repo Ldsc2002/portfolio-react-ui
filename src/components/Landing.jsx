@@ -3,8 +3,9 @@ import TypeAnimation from 'react-type-animation'
 import { Icon } from '@iconify/react'
 import PropTypes from 'prop-types'
 import classes from '../style/Landing.module.css'
+import LanguageSelector from './LanguageSelector'
 
-function Landing({ data }) {
+function Landing({ data, lang, langChange }) {
     return (
         <div className={classes.container}>
             <div className={classes.titleContainer}>
@@ -18,6 +19,8 @@ function Landing({ data }) {
                     wrapper="h2"
                     repeat={Infinity}
                 />
+
+                <LanguageSelector languages={lang} langChange={langChange} />
             </div>
         </div>
     )
@@ -30,6 +33,11 @@ Landing.propTypes = {
             PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
         ),
     }),
+    lang: PropTypes.arrayOf(PropTypes.shape({
+        key: PropTypes.string,
+        lang: PropTypes.string,
+    })),
+    langChange: PropTypes.func,
 }
 
 export default Landing
