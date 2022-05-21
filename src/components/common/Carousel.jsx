@@ -3,6 +3,7 @@ import classes from '../../style/Carousel.module.css'
 
 function Carousel({ data, content }) {
     const [activeIndex, setActiveIndex] = useState(0)
+    const [paused, setPaused] = useState(false)
 
     const updateIndex = (newIndex) => {
         if (newIndex < 0) {
@@ -15,8 +16,10 @@ function Carousel({ data, content }) {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            updateIndex(activeIndex + 1)
-        }, 5000)
+            if (!paused) {
+                updateIndex(activeIndex + 1)
+            }
+        }, 3000)
 
         return () => {
             if (interval) {
@@ -26,7 +29,7 @@ function Carousel({ data, content }) {
     })
 
     return (
-        <div className={classes.carousel}>
+        <div className={classes.carousel} onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)} >
             <div className={classes.inner} style={{ transform: `translateX(-${activeIndex * 100}%)` }}>
                 {data.map((element) => (
                     cloneElement(content, { data: element.content, key: element.id })
