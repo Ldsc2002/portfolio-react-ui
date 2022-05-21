@@ -6,6 +6,7 @@ import en from './data/en.json'
 import languages from './data/languages.json'
 import About from './components/About'
 import PopUp from './components/common/PopUp'
+import Projects from './components/Projects'
 
 const langOptions = {
     es,
@@ -35,6 +36,7 @@ function App() {
             <GitHubButton data={lang.GitButton} />
             <Landing data={lang.Landing} lang={languages} langChange={languageChange} />
             <About data={lang.About} />
+            <Projects />
         </div>
     )
 }
