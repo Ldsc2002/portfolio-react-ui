@@ -1,4 +1,5 @@
 import React, { cloneElement, useEffect, useState } from 'react'
+import { useSwipeable } from 'react-swipeable'
 import classes from '../../style/Carousel.module.css'
 
 function Carousel({ data, content }) {
@@ -28,8 +29,13 @@ function Carousel({ data, content }) {
         }
     })
 
+    const handlers = useSwipeable({
+        onSwipedLeft: () => updateIndex(activeIndex + 1),
+        onSwipedRight: () => updateIndex(activeIndex - 1)
+    })
+
     return (
-        <div className={classes.carousel} onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)} >
+        <div {...handlers} className={classes.carousel} onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)} >
             <div className={classes.inner} style={{ transform: `translateX(-${activeIndex * 100}%)` }}>
                 {data.map((element) => (
                     cloneElement(content, { data: element.content, key: element.id })
