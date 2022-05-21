@@ -46,7 +46,7 @@ function Carousel({ data, content }) {
         >
             <div className={classes.inner} style={{ transform: `translateX(-${activeIndex * 100}%)` }}>
                 {data.map((element) => (
-                    cloneElement(content, { data: element.content, key: element.id })
+                    cloneElement(content, { data: element, key: element.id })
                 ))}
             </div>
 
@@ -60,7 +60,7 @@ function Carousel({ data, content }) {
                         key={element.id}
                         onClick={() => { updateIndex(element.id - 1) }}
                     >
-                        {element.content}
+                        {element.content.title}
                     </button>
                 ))}
 

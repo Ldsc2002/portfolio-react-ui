@@ -38,7 +38,7 @@ function App() {
             <GitHubButton data={lang.GitButton} />
             <Landing data={lang.Landing} lang={languages} langChange={languageChange} />
             <About data={lang.About} />
-            <Projects />
+            <Projects data={lang.Projects}/>
             <Skills />
             <Footer data={lang.Footer} />
         </div>
