@@ -8,5 +8,9 @@
             "Hello",
             "Testing"
         ]
+    },
+    "About": {
+        "title": "About Me",
+        "text": "This is a description"
     }
 }

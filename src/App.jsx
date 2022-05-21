@@ -4,6 +4,7 @@ import GitHubButton from './components/GitHubButton'
 import es from './data/es.json'
 import en from './data/en.json'
 import languages from './data/languages.json'
+import About from './components/About'
 
 const langOptions = {
     es,
@@ -21,6 +22,7 @@ function App() {
         <div className="app-container">
             <GitHubButton data={lang.GitButton} />
             <Landing data={lang.Landing} lang={languages} langChange={languageChange} />
+            <About data={lang.About} />
         </div>
     )
 }

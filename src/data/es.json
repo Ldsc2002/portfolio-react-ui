@@ -8,5 +8,9 @@
             "Hola",
             "Probando"
         ]
+    },
+    "About": {
+        "title": "Sobre Mi",
+        "text": "Esto es una descripción"
     }
 }
