@@ -13,8 +13,9 @@ function Carousel({ data, content }) {
             setActiveIndex(data.length - 1)
         } else if (newIndex >= data.length) {
             setActiveIndex(0)
+        } else {
+            setActiveIndex(newIndex)
         }
-        setActiveIndex(newIndex)
     }
 
     useEffect(() => {
