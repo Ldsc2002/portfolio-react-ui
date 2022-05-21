@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    height: 20vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #292E33;
+    color: white;
+    flex-direction: column;
+}
