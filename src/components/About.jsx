@@ -1,18 +1,21 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import classes from '../style/About.module.css'
+import InfoWindow from './common/InfoWindow'
 
 function About({ data }) {
     return (
         <div className={classes.container}>
-            <h2>{data.title}</h2>
+            <h2 className={classes.title}>{data.title}</h2>
+            <InfoWindow text={data.text}/>
         </div>
     )
 }
 
 About.propTypes = {
     data: PropTypes.shape({
-        url: PropTypes.string,
+        title: PropTypes.string,
+        text: PropTypes.string,
     }),
 }
 
