@@ -7,7 +7,7 @@ function About({ data }) {
     return (
         <div className={classes.container}>
             <h2 className={classes.title}>{data.title}</h2>
-            <InfoWindow text={data.text}/>
+            <InfoWindow text={data.text} />
         </div>
     )
 }
