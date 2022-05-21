@@ -8,6 +8,7 @@ import About from './components/About'
 import PopUp from './components/common/PopUp'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
+import Skills from './components/Skills'
 
 const langOptions = {
     es,
@@ -38,6 +39,7 @@ function App() {
             <Landing data={lang.Landing} lang={languages} langChange={languageChange} />
             <About data={lang.About} />
             <Projects />
+            <Skills />
             <Footer data={lang.Footer}/>
         </div>
     )
