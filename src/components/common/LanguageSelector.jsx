@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import classes from '../style/LanguageSelector.module.css'
+import classes from '../../style/LanguageSelector.module.css'
 
 function LanguageSelector({ languages, langChange }) {
     return (

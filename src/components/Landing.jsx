@@ -3,7 +3,7 @@ import { Icon } from '@iconify/react'
 import PropTypes from 'prop-types'
 import Typed from 'typed.js'
 import classes from '../style/Landing.module.css'
-import LanguageSelector from './LanguageSelector'
+import LanguageSelector from './common/LanguageSelector'
 
 function Landing({ data, lang, langChange }) {
     const animation = useRef(null)

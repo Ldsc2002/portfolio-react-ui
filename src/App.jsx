@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Landing from './components/Landing'
-import GitHubButton from './components/GitHubButton'
+import GitHubButton from './components/common/GitHubButton'
 import es from './data/es.json'
 import en from './data/en.json'
 import languages from './data/languages.json'

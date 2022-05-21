@@ -5,7 +5,7 @@ import classes from '../style/Projects.module.css'
 function About({ data }) {
     return (
         <div className={classes.container}>
-
+            <p>Projects go here</p>
         </div>
     )
 }
