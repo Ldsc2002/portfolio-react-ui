@@ -38,7 +38,7 @@ function App() {
             <Landing data={lang.Landing} lang={languages} langChange={languageChange} />
             <About data={lang.About} />
             <Projects />
-            <Footer />
+            <Footer data={lang.Footer}/>
         </div>
     )
 }
