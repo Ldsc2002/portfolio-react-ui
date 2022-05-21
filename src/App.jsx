@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Landing from './components/Landing'
 import GitHubButton from './components/common/GitHubButton'
 import es from './data/es.json'
@@ -32,6 +32,15 @@ function App() {
         setPopUpContent(content)
         setShowPopUp(true)
     }
+
+    useEffect(() => {
+        const content = (
+            <div style={{fontSize: 40 + "px"}}>This site is under construction</div>
+        )
+
+        setPopUpContent(content)
+        setShowPopUp(true)
+    }, [])
 
     return (
         <div className="app-container">

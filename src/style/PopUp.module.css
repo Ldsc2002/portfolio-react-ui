@@ -12,7 +12,6 @@
 }
 
 .card {
-    height: 50vh;
     border-radius: 4px;
     width: 50%;
     background-color: #343a40;
@@ -43,5 +42,9 @@
 }
 
 .content {
-    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    height: 50vh;
 }
