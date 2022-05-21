@@ -1,11 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import classes from '../style/LanguageSelector.module.css'
 
 function LanguageSelector({ languages, langChange }) {
     return (
-        <div className="posts-container">
+        <div className={classes.buttonContainer}>
             {languages.map((language) => (
                 <button
+                    className={classes.button}
                     type="button"
                     value={language.key}
                     key={language.key}
