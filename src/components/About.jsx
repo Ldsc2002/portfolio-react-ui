@@ -7,7 +7,7 @@ function About({ data }) {
     return (
         <div className={classes.container}>
             <h2 className={classes.title}>{data.title}</h2>
-            <InfoWindow text={data.text} />
+            <InfoWindow text={data.text} title={data.optionalTitle} />
         </div>
     )
 }
@@ -15,6 +15,7 @@ function About({ data }) {
 About.propTypes = {
     data: PropTypes.shape({
         title: PropTypes.string,
+        optionalTitle: PropTypes.string,
         text: PropTypes.string,
     }),
 }

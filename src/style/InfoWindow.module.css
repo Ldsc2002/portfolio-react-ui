@@ -8,6 +8,10 @@
     border-radius: 4px;
 }
 
+.textContainer {
+    margin: 26px 30px;
+}
+
 .topBar {
     display: flex;
     align-items: center;
@@ -22,6 +26,16 @@
     height: 10px;
     border-radius: 5px;
     margin-left: 8px;
+}
+
+.title {
+    font-size: 36px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.text {
+    font-size: 20px;
 }
 
 .red {

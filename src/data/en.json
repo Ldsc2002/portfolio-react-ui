@@ -11,6 +11,7 @@
     },
     "About": {
         "title": "About Me",
+        "optionalTitle": "Hi",
         "text": "This is a description"
     }
 }

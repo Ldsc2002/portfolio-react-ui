@@ -10,8 +10,10 @@ function InfoWindow({ title, text }) {
                 <span className={classes.yellow} />
                 <span className={classes.green} />
             </div>
-            <h2>{title}</h2>
-            <p>{text}</p>
+            <div className={classes.textContainer}>
+                <h2 className={classes.title}>{title}</h2>
+                <p className={classes.text}>{text}</p>
+            </div>
         </div>
     )
 }

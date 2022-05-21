@@ -11,6 +11,7 @@
     },
     "About": {
         "title": "Sobre Mi",
+        "optionalTitle": "Hola!",
         "text": "Esto es una descripción"
     }
 }
