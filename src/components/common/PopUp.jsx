@@ -7,7 +7,14 @@ function PopUp({ trigger, children, setTrigger }) {
         <div className={classes.popUp}>
             <div className={classes.card}>
                 <div className={classes.topBar}>
-                    <span className={classes.button} onClick={() => setTrigger(false)} />
+                    <span
+                        aria-label="Close pop-up"
+                        role="button"
+                        className={classes.button}
+                        tabIndex={0}
+                        onKeyDown={() => setTrigger(false)}
+                        onClick={() => setTrigger(false)}
+                    />
                 </div>
                 <div className={classes.content}>
                     {children}

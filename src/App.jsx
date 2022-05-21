@@ -25,11 +25,10 @@ function App() {
     }
 
     function popUpHandler(data) {
-        console.log(data)
-
-        content = (
+        const content = (
             <div>{data.title}</div>
         )
+
         setPopUpContent(content)
         setShowPopUp(true)
     }
@@ -43,7 +42,7 @@ function App() {
             <GitHubButton data={lang.GitButton} />
             <Landing data={lang.Landing} lang={languages} langChange={languageChange} />
             <About data={lang.About} />
-            <Projects data={lang.Projects} action={popUpHandler}/>
+            <Projects data={lang.Projects} action={popUpHandler} />
             <Skills />
             <Footer data={lang.Footer} />
         </div>
