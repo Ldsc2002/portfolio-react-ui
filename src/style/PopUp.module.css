@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,6 +13,35 @@
 
 .card {
     height: 50vh;
+    border-radius: 4px;
     width: 50%;
-    background-color: white;
+    background-color: #343a40;
+    border: solid 1px #282d32;
+    color: white;
+}
+
+.topBar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-radius: 4px 4px 0px 0px;
+    background-color: #282d32;
+}
+
+.button {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin: 10px;
+    background-color: rgb(236, 97, 81);
+}
+
+.button:hover {
+    filter: brightness(0.9);
+}
+
+.content {
+    margin: 10px;
 }
