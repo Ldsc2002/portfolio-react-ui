@@ -6,7 +6,7 @@ function Footer({ data }) {
     return (
         <footer className={classes.container}>
             <p>{data.copyright}</p>
-        </footer> 
+        </footer>
     )
 }
 

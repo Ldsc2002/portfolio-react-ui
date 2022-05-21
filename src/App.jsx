@@ -40,7 +40,7 @@ function App() {
             <About data={lang.About} />
             <Projects />
             <Skills />
-            <Footer data={lang.Footer}/>
+            <Footer data={lang.Footer} />
         </div>
     )
 }
