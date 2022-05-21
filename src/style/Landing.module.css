@@ -17,9 +17,16 @@
     margin: 0px;
 }
 
+.typeWrap > span {
+    font-size: 24px;
+}
 
 .titleContainer {
     color: white;
     width: 100%;
     text-align: center;
+}
+
+.type {
+    white-space: pre; 
 }

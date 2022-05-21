@@ -42,8 +42,8 @@ function Landing({ data, lang, langChange }) {
 
                 <h1 className={classes.name}>{data.name}</h1>
 
-                <div className="type-wrap">
-                    <span style={{ whiteSpace: 'pre' }} ref={animation} />
+                <div className={classes.typeWrap}>
+                    <span className={classes.type} ref={animation} />
                 </div>
 
                 <LanguageSelector languages={lang} langChange={langChange} />
