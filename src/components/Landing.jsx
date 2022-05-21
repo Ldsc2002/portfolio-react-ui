@@ -1,11 +1,40 @@
-import React from 'react'
-import TypeAnimation from 'react-type-animation'
+import React, { useLayoutEffect, useEffect, useRef } from 'react'
 import { Icon } from '@iconify/react'
 import PropTypes from 'prop-types'
+import Typed from 'typed.js'
 import classes from '../style/Landing.module.css'
 import LanguageSelector from './LanguageSelector'
 
 function Landing({ data, lang, langChange }) {
+    const animation = useRef(null)
+    const typed = useRef(null)
+    const firstUpdate = useRef(true)
+
+    const options = {
+        strings: data.headerOptions,
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true,
+    }
+
+    useLayoutEffect(() => {
+        if (!firstUpdate.current) {
+            typed.current.destroy()
+            options.strings = [...data.headerOptions]
+            typed.current = new Typed(animation.current, options)
+        } else {
+            firstUpdate.current = false
+        }
+    })
+
+    useEffect(() => {
+        typed.current = new Typed(animation.current, options)
+
+        return () => {
+            typed.current.destroy()
+        }
+    }, [])
+
     return (
         <div className={classes.container}>
             <div className={classes.titleContainer}>
@@ -13,12 +42,9 @@ function Landing({ data, lang, langChange }) {
 
                 <h1 className={classes.name}>{data.name}</h1>
 
-                <TypeAnimation
-                    cursor
-                    sequence={data.headerOptions}
-                    wrapper="h2"
-                    repeat={Infinity}
-                />
+                <div className="type-wrap">
+                    <span style={{ whiteSpace: 'pre' }} ref={animation} />
+                </div>
 
                 <LanguageSelector languages={lang} langChange={langChange} />
             </div>

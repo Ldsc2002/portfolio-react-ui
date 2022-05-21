@@ -5,8 +5,8 @@
     "Landing": {
         "name": "Luis Santos",   
         "headerOptions": [
-            "Hola", 1000,
-            "Probando", 1000
+            "Hola",
+            "Probando"
         ]
     }
 }
