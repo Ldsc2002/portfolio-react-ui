@@ -7,7 +7,7 @@ function Projects() {
     return (
         <div className={classes.container}>
             <p>Projects go here</p>
-            <Carousel data={[{"id": 1, "content": "Testing1"}, {"id": 2, "content": "Testing2"}, {"id": 3, "content": "Testing3"}]} content={<CarouselItem />} />
+            <Carousel data={[{ id: 1, content: 'Testing1' }, { id: 2, content: 'Testing2' }, { id: 3, content: 'Testing3' }]} content={<CarouselItem />} />
         </div>
     )
 }

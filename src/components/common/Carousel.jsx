@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-props-no-spreading */
+
 import React, { cloneElement, useEffect, useState } from 'react'
 import { useSwipeable } from 'react-swipeable'
 import classes from '../../style/Carousel.module.css'
@@ -8,9 +10,9 @@ function Carousel({ data, content }) {
 
     const updateIndex = (newIndex) => {
         if (newIndex < 0) {
-            newIndex = data.length - 1
+            setActiveIndex(data.length - 1)
         } else if (newIndex >= data.length) {
-            newIndex = 0
+            setActiveIndex(0)
         }
         setActiveIndex(newIndex)
     }
@@ -31,11 +33,16 @@ function Carousel({ data, content }) {
 
     const handlers = useSwipeable({
         onSwipedLeft: () => updateIndex(activeIndex + 1),
-        onSwipedRight: () => updateIndex(activeIndex - 1)
+        onSwipedRight: () => updateIndex(activeIndex - 1),
     })
 
     return (
-        <div {...handlers} className={classes.carousel} onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)} >
+        <div
+            {...handlers}
+            className={classes.carousel}
+            onMouseEnter={() => setPaused(true)}
+            onMouseLeave={() => setPaused(false)}
+        >
             <div className={classes.inner} style={{ transform: `translateX(-${activeIndex * 100}%)` }}>
                 {data.map((element) => (
                     cloneElement(content, { data: element.content, key: element.id })
@@ -43,16 +50,23 @@ function Carousel({ data, content }) {
             </div>
 
             <div className={classes.indicators}>
-                <button onClick={() => {updateIndex(activeIndex - 1)}}>Previous</button>
+                <button type="button" onClick={() => { updateIndex(activeIndex - 1) }}>Previous</button>
 
                 {data.map((element) => (
-                    <button className={`${element.id - 1 === activeIndex ? classes.active : ""}`} key={element.id} onClick={() => {updateIndex(element.id - 1)}}>{element.content}</button>
+                    <button
+                        type="button"
+                        className={`${element.id - 1 === activeIndex ? classes.active : ''}`}
+                        key={element.id}
+                        onClick={() => { updateIndex(element.id - 1) }}
+                    >
+                        {element.content}
+                    </button>
                 ))}
-                
-                <button onClick={() => {updateIndex(activeIndex + 1)}}>Next</button>
+
+                <button type="button" onClick={() => { updateIndex(activeIndex + 1) }}>Next</button>
             </div>
         </div>
-        
+
     )
 }
 
