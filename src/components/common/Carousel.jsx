@@ -16,7 +16,7 @@ function Carousel({ data, content }) {
     useEffect(() => {
         const interval = setInterval(() => {
             updateIndex(activeIndex + 1)
-        }, 1000)
+        }, 5000)
 
         return () => {
             if (interval) {
@@ -37,7 +37,7 @@ function Carousel({ data, content }) {
                 <button onClick={() => {updateIndex(activeIndex - 1)}}>Previous</button>
 
                 {data.map((element) => (
-                    <button className={`${element.id - 1 === activeIndex ? classes.active : ""}`} key={element.id} onClick={() => {updateIndex(element.id - 1)}}>{element.id}</button>
+                    <button className={`${element.id - 1 === activeIndex ? classes.active : ""}`} key={element.id} onClick={() => {updateIndex(element.id - 1)}}>{element.content}</button>
                 ))}
                 
                 <button onClick={() => {updateIndex(activeIndex + 1)}}>Next</button>
