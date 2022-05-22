@@ -1,5 +1,6 @@
 .carousel {
     overflow: hidden;
+    max-width: 90%;
 }
 
 .inner {
@@ -10,6 +11,7 @@
 .indicators {
     display: flex;
     justify-content: center;
+    margin: 20px 0px;
 }
 
 .indicators > button {

@@ -1,6 +1,5 @@
 .container {
     display: flex;
-    height: 60vh;
     width: 100%;
     overflow: hidden;
     align-items: center;
@@ -8,4 +7,5 @@
     background-color: #343a40;
     color: white;
     flex-direction: column;
+    padding: 10vh 0vh;
 }
