@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from 'react'
+
 import Landing from './components/Landing'
 import GitHubButton from './components/common/GitHubButton'
-
-import UnderConstructionImg from './images/UnderConstruction.svg'
-import es from './data/es.json'
-import en from './data/en.json'
-
-import languages from './data/languages.json'
 import About from './components/About'
 import PopUp from './components/common/PopUp'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
 import Skills from './components/Skills'
+
+import UnderConstructionImg from './images/UnderConstruction.svg'
+import es from './data/es.json'
+import en from './data/en.json'
+import languages from './data/languages.json'
 
 const langOptions = {
     es,
@@ -24,6 +24,7 @@ function App() {
     const [popUpContent, setPopUpContent] = useState()
 
     const languageChange = (event) => {
+        localStorage.setItem('lang', event.target.value)
         setLang(langOptions[event.target.value])
     }
 
@@ -37,11 +38,24 @@ function App() {
     }
 
     useEffect(() => {
-        if (lang.underConstruction !== "") {
+        const prevLang = localStorage.getItem('lang')
+        let message = ''
+
+        if (prevLang !== null) {
+            setLang(langOptions[prevLang])
+            message = langOptions[prevLang].UnderConstruction
+        } else {
+            message = lang.UnderConstruction
+        }
+
+        if (message !== '') {
             const content = (
-                <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
-                    <img src={UnderConstructionImg} style={{width: 20 + "vh", height: 20 + "vh"}}></img>
-                    <p style={{fontSize: 40 + "px",}}>{lang.UnderConstruction}</p>
+                <div style={{
+                    display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
+                }}
+                >
+                    <img src={UnderConstructionImg} style={{ width: `${20}vh`, height: `${20}vh` }} />
+                    <p style={{ fontSize: `${40}px` }}>{message}</p>
                 </div>
             )
 
