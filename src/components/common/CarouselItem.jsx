@@ -22,7 +22,7 @@ function CarouselItem({ data, action }) {
             </div>
 
             <div className={classes.container}>
-                <img className={classes.image} alt={data.content.title} src={'/' + data.content.image} />
+                <img className={classes.image} alt={data.content.title} src={`/${data.content.image}`} />
             </div>
         </div>
     )

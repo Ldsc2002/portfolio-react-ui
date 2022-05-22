@@ -1,4 +1,5 @@
 /* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable jsx-a11y/control-has-associated-label */
 
 import React, { cloneElement, useEffect, useState } from 'react'
 import { useSwipeable } from 'react-swipeable'
