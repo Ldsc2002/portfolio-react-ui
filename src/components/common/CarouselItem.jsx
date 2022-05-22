@@ -27,6 +27,7 @@ function CarouselItem({ data, action }) {
 
             <div className={classes.container}>
                 <img className={classes.image} alt={data.content.title} src={`/${data.content.image}`} />
+                
                 <div className={classes.shortDesc}>{data.content.desc}</div>
             </div>
         </div>

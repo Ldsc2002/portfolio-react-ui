@@ -16,6 +16,17 @@
     margin: 20px 0px;
 }
 
+.shortDesc {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    overflow: hidden;
+    white-space: normal;
+    margin: 10px 26px 0px;
+    height: 50px;
+}
+
 .image {
     height: 30vh;
 }
