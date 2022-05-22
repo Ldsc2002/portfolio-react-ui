@@ -8,7 +8,7 @@ function CarouselItem({ data, action }) {
         <div className={classes.container}>
             <img className={classes.image} alt={data.content.title} src={`/${data.content.image}`} />
             <div className={classes.desc}>{data.content.desc}</div>
-            <a className={`${classes.link} ${classes.desc}`} target="_blank" href={data.content.url}>{data.content.title}</a>
+            <a className={`${classes.link} ${classes.desc}`} target="_blank" href={data.content.url} rel="noreferrer">{data.content.title}</a>
         </div>
     )
 
