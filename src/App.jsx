@@ -37,7 +37,10 @@ function App() {
         if (message !== '') {
             const content = (
                 <div style={{
-                    display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    justifyContent: 'center',
                 }}
                 >
                     <img src={UnderConstructionImg} alt="" style={{ width: `${20}vh`, height: `${20}vh` }} />
