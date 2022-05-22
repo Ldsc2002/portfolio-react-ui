@@ -4,12 +4,16 @@ import classes from '../../style/CarouselItem.module.css'
 import btnImage from '../../images/OpenIcon.svg'
 
 function CarouselItem({ data, action }) {
+    const popUpContent = (
+        <div>{data.content.title}</div>
+    )    
+    
     return (
         <div className={classes.carouselItem}>
             <div className={classes.topBar}>
 
                 <div className={classes.flexContainer}>
-                    <button className={classes.openBtn} type="button" onClick={() => action(data.content)}>
+                    <button className={classes.openBtn} type="button" onClick={() => action(popUpContent)}>
                         <img alt="" src={btnImage} className={classes.button} />
                     </button>
                 </div>

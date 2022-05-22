@@ -58,11 +58,7 @@ function App() {
         setLang(langOptions[event.target.value])
     }
 
-    function popUpHandler(data) {
-        const content = (
-            <div>{data.title}</div>
-        )
-
+    function popUpHandler(content) {
         setPopUpContent(content)
         setShowPopUp(true)
     }
