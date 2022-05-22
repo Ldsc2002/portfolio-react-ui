@@ -52,20 +52,14 @@ function Carousel({ data, content }) {
             </div>
 
             <div className={classes.indicators}>
-                <button type="button" onClick={() => { updateIndex(activeIndex - 1) }}>Previous</button>
-
                 {data.map((element) => (
                     <button
                         type="button"
                         className={`${element.id - 1 === activeIndex ? classes.active : ''}`}
                         key={element.id}
                         onClick={() => { updateIndex(element.id - 1) }}
-                    >
-                        {element.content.title}
-                    </button>
+                    />
                 ))}
-
-                <button type="button" onClick={() => { updateIndex(activeIndex + 1) }}>Next</button>
             </div>
         </div>
 
