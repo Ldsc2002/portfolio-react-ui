@@ -8,7 +8,7 @@ function PopUp({ trigger, children, setTrigger }) {
         <div className={classes.popUp}>
             <div className={classes.card}>
                 <div className={classes.topBar}>
-                    <button className={classes.btnContainer} type="button" onKeyDown={() => setTrigger(false)} onClick={() => setTrigger(false)}>
+                    <button className={classes.btnContainer} type="button" onClick={() => setTrigger(false)}>
                         <img alt="" src={btnImage} className={classes.button} />
                     </button>
                 </div>
