@@ -32,7 +32,7 @@
                 "id": 2,
                 "content": {
                     "title": "Testing2", 
-                    "image": "images/Favicon.svg", 
+                    "image": "Favicon.svg", 
                     "desc": "Descripcion2"
                 }
             },
@@ -40,7 +40,7 @@
                 "id": 3,
                 "content": {
                     "title": "Testing3", 
-                    "image": "images/Favicon.svg", 
+                    "image": "Favicon.svg", 
                     "desc": "Descripcion3"
                 }
             }
