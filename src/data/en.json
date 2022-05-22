@@ -24,27 +24,40 @@
             { 
                 "id": 1,
                 "content": {
-                    "title": "Reddit", 
+                    "title": "Reddit React UI", 
                     "image": "Reddit.svg", 
-                    "desc": "The internet's homepage recreated with React."
+                    "desc": "Reddit",
+                    "url": "http://juanelcaballo.club/20226/Reddit/"
                 }
             },
             { 
                 "id": 2,
                 "content": {
-                    "title": "Testing2", 
-                    "image": "Favicon.svg", 
-                    "desc": "Descripcion2"
+                    "title": "Struum Roku", 
+                    "image": "Reddit.svg", 
+                    "desc": "Descripcion2",
+                    "url": "http://juanelcaballo.club/20226/Reddit/"
                 }
             },
             { 
                 "id": 3,
                 "content": {
-                    "title": "Testing3", 
-                    "image": "Favicon.svg", 
-                    "desc": "Descripcion3"
+                    "title": "Pantaya Roku", 
+                    "image": "Reddit.svg", 
+                    "desc": "Descripcion3",
+                    "url": "http://juanelcaballo.club/20226/Reddit/"
+                }
+            }, 
+            { 
+                "id": 4,
+                "content": {
+                    "title": "Teatrix Roku", 
+                    "image": "Reddit.svg", 
+                    "desc": "The internet's homepage recreated with React.",
+                    "url": "http://juanelcaballo.club/20226/Reddit/"
                 }
             }
+            
         ]
     },
     "Footer": {

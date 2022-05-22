@@ -30,3 +30,8 @@
     filter: brightness(1.1);
     cursor: pointer;
 }
+
+.active:hover {
+    filter: brightness(1.1);
+    cursor: pointer;
+}

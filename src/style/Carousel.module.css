@@ -23,6 +23,11 @@
     border: solid 1px #282d32;
 }
 
+.indicators > button:hover {
+    cursor: pointer;
+    filter: brightness(0.8);
+}
+
 .indicators > button.active {
     background-color: #282d32;
     color: white;
