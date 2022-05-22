@@ -25,7 +25,8 @@
                 "id": 1,
                 "content": {
                     "title": "Reddit React UI", 
-                    "image": "Reddit.svg", 
+                    "image": "Reddit.svg",
+                    "shortDesc": "Reddit clone", 
                     "desc": "Reddit",
                     "url": "http://juanelcaballo.club/20226/Reddit/"
                 }
@@ -35,6 +36,7 @@
                 "content": {
                     "title": "Struum Roku", 
                     "image": "Reddit.svg", 
+                    "shortDesc": "Reddit clone", 
                     "desc": "Descripcion2",
                     "url": "http://juanelcaballo.club/20226/Reddit/"
                 }
@@ -44,6 +46,7 @@
                 "content": {
                     "title": "Pantaya Roku", 
                     "image": "Reddit.svg", 
+                    "shortDesc": "Reddit clone", 
                     "desc": "Descripcion3",
                     "url": "http://juanelcaballo.club/20226/Reddit/"
                 }
@@ -52,7 +55,8 @@
                 "id": 4,
                 "content": {
                     "title": "Teatrix Roku", 
-                    "image": "Reddit.svg", 
+                    "image": "Reddit.svg",
+                    "shortDesc": "Reddit clone",  
                     "desc": "The internet's homepage recreated with React.",
                     "url": "http://juanelcaballo.club/20226/Reddit/"
                 }
