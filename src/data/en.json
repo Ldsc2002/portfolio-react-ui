@@ -25,7 +25,7 @@
                 "id": 1,
                 "content": {
                     "title": "Reddit React UI", 
-                    "image": "Reddit.svg",
+                    "image": "Projects/Reddit.svg",
                     "desc": "Reddit",
                     "url": "http://juanelcaballo.club/20226/Reddit/"
                 }
@@ -34,7 +34,7 @@
                 "id": 2,
                 "content": {
                     "title": "Struum Roku", 
-                    "image": "Reddit.svg", 
+                    "image": "Projects/Reddit.svg", 
                     "desc": "Descripcion2",
                     "url": "http://juanelcaballo.club/20226/Reddit/"
                 }
@@ -43,7 +43,7 @@
                 "id": 3,
                 "content": {
                     "title": "Pantaya Roku", 
-                    "image": "Reddit.svg", 
+                    "image": "Projects/Reddit.svg", 
                     "desc": "Descripcion3",
                     "url": "http://juanelcaballo.club/20226/Reddit/"
                 }
@@ -52,12 +52,41 @@
                 "id": 4,
                 "content": {
                     "title": "Teatrix Roku", 
-                    "image": "Reddit.svg",
+                    "image": "Projects/Reddit.svg",
                     "desc": "The internet's homepage recreated with React. The internet's homepage recreated with React.",
                     "url": "http://juanelcaballo.club/20226/Reddit/"
                 }
             }
             
+        ]
+    },
+    "Skills": {
+        "title": "Skills",
+        "content": [
+            { 
+                "id": 1,
+                "content": {
+                    "name": "React", 
+                    "image": "Reddit.svg",
+                    "level": "Reddit"
+                }
+            },
+            { 
+                "id": 2,
+                "content": {
+                    "name": "HTML5", 
+                    "image": "Reddit.svg",
+                    "level": "Reddit"
+                }
+            },
+            { 
+                "id": 3,
+                "content": {
+                    "name": "BrightScript", 
+                    "image": "Reddit.svg",
+                    "level": "Reddit"
+                }
+            }  
         ]
     },
     "Footer": {
