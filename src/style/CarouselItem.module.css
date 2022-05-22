@@ -10,6 +10,24 @@
     box-sizing: border-box;
 }
 
+@media only screen and (max-width: 1200px) {
+    .shortDesc {
+        font-size: 14px;
+    }
+    .desc {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .shortDesc {
+        font-size: 18px;
+    }
+    .desc {
+        font-size: 18px;
+    }
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -34,7 +52,6 @@
 }
 
 .link {
-    margin-top: 20px;
     color: white;
     width: fit-content;
 }
