@@ -11,7 +11,7 @@ import Skills from './components/Skills'
 import UnderConstructionImg from './images/UnderConstruction.svg'
 import es from './data/es.json'
 import en from './data/en.json'
-import languages from './data/languages.json'
+import common from './data/common.json'
 
 const langOptions = {
     es,
@@ -34,7 +34,7 @@ function App() {
             message = lang.UnderConstruction
         }
 
-        if (message !== '') {
+        if (common.UnderConstruction) {
             const content = (
                 <div style={{
                     display: 'flex',
@@ -70,7 +70,7 @@ function App() {
             </PopUp>
 
             <GitHubButton data={lang.GitButton} />
-            <Landing data={lang.Landing} lang={languages} langChange={languageChange} />
+            <Landing data={lang.Landing} lang={common.languages} langChange={languageChange} />
             <About data={lang.About} />
             <Projects data={lang.Projects} action={popUpHandler} />
             <Skills />
