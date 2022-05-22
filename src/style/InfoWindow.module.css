@@ -1,6 +1,5 @@
 .container {
     height: 50%;
-    width: 70%;
     align-items: center;
     justify-content: center;
     background-color: #343a40;
@@ -15,11 +14,17 @@
     .text {
         font-size: 14px;
     }
+    .container {
+        width: 80%;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
     .text {
         font-size: 18px;
+    }
+    .container {
+        width: 60%;
     }
 }
 
