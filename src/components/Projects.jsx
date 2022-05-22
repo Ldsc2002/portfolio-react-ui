@@ -7,8 +7,8 @@ import CarouselItem from './common/CarouselItem'
 function Projects({ data, action }) {
     return (
         <div className={classes.container}>
-            <p>Projects go here</p>
-            <Carousel data={data} content={<CarouselItem action={action} />} />
+            <p>{data.title}</p>
+            <Carousel data={data.content} content={<CarouselItem action={action} />} />
         </div>
     )
 }
