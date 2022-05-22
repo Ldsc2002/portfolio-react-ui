@@ -35,22 +35,28 @@
     display: flex;
     align-items: center;
     width: 100%;
-    height: 50px;
+    height: 60px;
     border-radius: 4px 4px 0px 0px;
     background-color: #282d32;
 }
 
 .button {
     display: block;
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
+    width: inherit;
+    height: inherit;
+}
+
+.btnContainer {
+    background: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    padding: 0px;
     margin: 10px;
-    background-color: rgb(236, 97, 81);
 }
 
 .button:hover {
-    filter: brightness(0.9);
+    filter: brightness(0.8);
 }
 
 .content {
