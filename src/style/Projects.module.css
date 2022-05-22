@@ -9,3 +9,7 @@
     flex-direction: column;
     padding: 10vh 0vh;
 }
+
+.title {
+    margin-top: 0px;
+}

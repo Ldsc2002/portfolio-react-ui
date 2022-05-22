@@ -27,3 +27,15 @@ body {
     -webkit-animation: 0;
     animation: 0;
 }
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
+}

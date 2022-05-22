@@ -19,7 +19,7 @@ function CarouselItem({ data, action }) {
                 </div>
 
                 <div className={classes.titleContainer}>
-                    <h2>{data.content.title}</h2>
+                    <h3>{data.content.title}</h3>
                 </div>
 
                 <div className={classes.flexContainer} />
