@@ -12,7 +12,7 @@ function CarouselItem({ data, action }) {
         <div className={classes.carouselItem}>
             <div className={classes.topBar}>
 
-                <div className={classes.flexContainer} >
+                <div className={classes.flexContainer}>
                     <button className={classes.openBtn} type="button" onClick={() => action(data.content)}>
                         <img alt="" src={btnImage} className={classes.button} />
                     </button>
@@ -22,7 +22,7 @@ function CarouselItem({ data, action }) {
                     <h2>{data.content.title}</h2>
                 </div>
 
-                <div className={classes.flexContainer}></div>
+                <div className={classes.flexContainer} />
             </div>
 
             <div className={classes.container}>
