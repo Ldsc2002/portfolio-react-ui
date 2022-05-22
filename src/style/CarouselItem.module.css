@@ -29,19 +29,36 @@
     background-color: #282d32;
 }
 
+.titleContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.flexContainer {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+}
+
+.openBtn {
+    align-self: start;
+    background: none;
+    border: none;
+    width: 40px;
+    padding: 0px;
+    height: 40px;
+    margin-left: 10px;
+}
+
 .button {
     display: block;
     width: inherit;
     height: inherit;
-}
-
-.btnContainer {
-    background: none;
-    border: none;
-    width: 40px;
-    height: 40px;
-    padding: 0px;
-    margin: 10px;
 }
 
 .button:hover {

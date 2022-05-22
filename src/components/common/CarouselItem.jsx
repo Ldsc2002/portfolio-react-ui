@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import classes from '../../style/CarouselItem.module.css'
-import btnImage from '../../images/CloseIcon.svg'
+import btnImage from '../../images/OpenIcon.svg'
 
 function CarouselItem({ data, action }) {
     const [image, setImage] = useState({})
@@ -11,13 +11,21 @@ function CarouselItem({ data, action }) {
     return (
         <div className={classes.carouselItem}>
             <div className={classes.topBar}>
-                <button className={classes.btnContainer} type="button" onClick={() => action(data.content)}>
-                    <img alt="" src={btnImage} className={classes.button} />
-                </button>
+
+                <div className={classes.flexContainer} >
+                    <button className={classes.openBtn} type="button" onClick={() => action(data.content)}>
+                        <img alt="" src={btnImage} className={classes.button} />
+                    </button>
+                </div>
+
+                <div className={classes.titleContainer}>
+                    <h2>{data.content.title}</h2>
+                </div>
+
+                <div className={classes.flexContainer}></div>
             </div>
 
             <div className={classes.container}>
-                <p>{data.content.title}</p>
                 <img className={classes.image} alt={data.content.title} src={image.default} />
             </div>
         </div>
