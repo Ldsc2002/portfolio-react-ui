@@ -2,6 +2,7 @@
 
 import React, { cloneElement, useEffect, useState } from 'react'
 import { useSwipeable } from 'react-swipeable'
+import PropTypes from 'prop-types'
 import classes from '../../style/Carousel.module.css'
 
 function Carousel({ data, content }) {
@@ -69,6 +70,11 @@ function Carousel({ data, content }) {
         </div>
 
     )
+}
+
+Carousel.propTypes = {
+    data: PropTypes.array,
+    content: PropTypes.element,
 }
 
 export default Carousel

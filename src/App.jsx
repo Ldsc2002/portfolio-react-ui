@@ -23,20 +23,6 @@ function App() {
     const [showPopUp, setShowPopUp] = useState(false)
     const [popUpContent, setPopUpContent] = useState()
 
-    const languageChange = (event) => {
-        localStorage.setItem('lang', event.target.value)
-        setLang(langOptions[event.target.value])
-    }
-
-    function popUpHandler(data) {
-        const content = (
-            <div>{data.title}</div>
-        )
-
-        setPopUpContent(content)
-        setShowPopUp(true)
-    }
-
     useEffect(() => {
         const prevLang = localStorage.getItem('lang')
         let message = ''
@@ -54,7 +40,7 @@ function App() {
                     display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
                 }}
                 >
-                    <img src={UnderConstructionImg} style={{ width: `${20}vh`, height: `${20}vh` }} />
+                    <img src={UnderConstructionImg} alt="" style={{ width: `${20}vh`, height: `${20}vh` }} />
                     <p style={{ fontSize: `${40}px` }}>{message}</p>
                 </div>
             )
@@ -63,6 +49,20 @@ function App() {
             setShowPopUp(true)
         }
     }, [])
+
+    const languageChange = (event) => {
+        localStorage.setItem('lang', event.target.value)
+        setLang(langOptions[event.target.value])
+    }
+
+    function popUpHandler(data) {
+        const content = (
+            <div>{data.title}</div>
+        )
+
+        setPopUpContent(content)
+        setShowPopUp(true)
+    }
 
     return (
         <div className="app-container">

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import classes from '../../style/CarouselItem.module.css'
 
 function CarouselItem({ data, action }) {
@@ -11,6 +12,11 @@ function CarouselItem({ data, action }) {
             </div>
         </div>
     )
+}
+
+CarouselItem.propTypes = {
+    data: PropTypes.any,
+    action: PropTypes.func,
 }
 
 export default CarouselItem

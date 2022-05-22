@@ -23,7 +23,8 @@ module.exports = {
     "react/jsx-indent" : ["error", 4],
     "react/jsx-indent-props": ["error", 4],
     "react/require-default-props": "off",
-    "react/jsx-no-bind": "off"
+    "react/jsx-no-bind": "off",
+    "react/forbid-prop-types": "off"
   }
   ,
 };

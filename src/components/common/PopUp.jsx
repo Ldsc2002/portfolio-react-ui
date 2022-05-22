@@ -25,4 +25,10 @@ function PopUp({ trigger, children, setTrigger }) {
         : ''
 }
 
+PopUp.propTypes = {
+    trigger: PropTypes.bool,
+    children: PropTypes.element,
+    setTrigger: PropTypes.func,
+}
+
 export default PopUp
