@@ -1,13 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import classes from '../../style/CarouselItem.module.css'
 import btnImage from '../../images/OpenIcon.svg'
 
 function CarouselItem({ data, action }) {
-    const [image, setImage] = useState({})
-
-    import(`../../images/${data.content.image}`).then((img) => setImage(img))
-
     return (
         <div className={classes.carouselItem}>
             <div className={classes.topBar}>
@@ -26,7 +22,7 @@ function CarouselItem({ data, action }) {
             </div>
 
             <div className={classes.container}>
-                <img className={classes.image} alt={data.content.title} src={image.default} />
+                <img className={classes.image} alt={data.content.title} src={'/' + data.content.image} />
             </div>
         </div>
     )
