@@ -6,8 +6,8 @@ import btnImage from '../../images/OpenIcon.svg'
 function CarouselItem({ data, action }) {
     const popUpContent = (
         <div>{data.content.title}</div>
-    )    
-    
+    )
+
     return (
         <div className={classes.carouselItem}>
             <div className={classes.topBar}>

@@ -5,7 +5,9 @@ import Typed from 'typed.js'
 import classes from '../style/Landing.module.css'
 import LanguageSelector from './common/LanguageSelector'
 
-function Landing({ data, lang, currentLang, langChange }) {
+function Landing({
+    data, lang, currentLang, langChange,
+}) {
     const animation = useRef(null)
     const typed = useRef(null)
     const firstUpdate = useRef(true)
