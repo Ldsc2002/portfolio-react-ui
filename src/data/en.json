@@ -23,9 +23,9 @@
             { 
                 "id": 1,
                 "content": {
-                    "title": "Testing1", 
-                    "image": "Favicon.svg", 
-                    "desc": "Descripcion1"
+                    "title": "Reddit", 
+                    "image": "Reddit.svg", 
+                    "desc": "The internet's homepage recreated with React."
                 }
             },
             { 
