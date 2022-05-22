@@ -13,6 +13,8 @@
 .container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 20px 0px;
 }
 
@@ -27,8 +29,27 @@
     height: 50px;
 }
 
+.desc {
+    margin-top: 20px;
+}
+
+.link {
+    margin-top: 20px;
+    color: white;
+    width: fit-content;
+}
+
+.link:visited {
+    color: #aaaaaa;
+}
+  
+.link:hover {
+    filter: brightness(1.1);
+}
+
 .image {
     height: 30vh;
+    margin-top: 10px;
 }
 
 .topBar {

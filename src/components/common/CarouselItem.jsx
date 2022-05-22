@@ -5,7 +5,11 @@ import btnImage from '../../images/OpenIcon.svg'
 
 function CarouselItem({ data, action }) {
     const popUpContent = (
-        <div>{data.content.url}</div>
+        <div className={classes.container}>
+            <img className={classes.image} alt={data.content.title} src={`/${data.content.image}`} />
+            <div className={classes.desc}>{data.content.desc}</div>
+            <a className={classes.link} target="_blank" href={data.content.url}>{data.content.title}</a>
+        </div>
     )
 
     return (
@@ -27,7 +31,7 @@ function CarouselItem({ data, action }) {
 
             <div className={classes.container}>
                 <img className={classes.image} alt={data.content.title} src={`/${data.content.image}`} />
-                
+
                 <div className={classes.shortDesc}>{data.content.desc}</div>
             </div>
         </div>
