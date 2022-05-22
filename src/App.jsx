@@ -70,7 +70,7 @@ function App() {
             </PopUp>
 
             <GitHubButton data={lang.GitButton} />
-            <Landing data={lang.Landing} lang={common.languages} langChange={languageChange} />
+            <Landing currentLang={lang.Lang} data={lang.Landing} lang={common.languages} langChange={languageChange} />
             <About data={lang.About} />
             <Projects data={lang.Projects} action={popUpHandler} />
             <Skills />

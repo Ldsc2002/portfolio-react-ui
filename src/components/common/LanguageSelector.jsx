@@ -2,12 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import classes from '../../style/LanguageSelector.module.css'
 
-function LanguageSelector({ languages, langChange }) {
+function LanguageSelector({ languages, current, langChange }) {
     return (
         <div className={classes.buttonContainer}>
             {languages.map((language) => (
                 <button
-                    className={classes.button}
+                    className={`${language.key === current ? classes.active : classes.button}`}
                     type="button"
                     value={language.key}
                     key={language.key}
@@ -25,6 +25,7 @@ LanguageSelector.propTypes = {
         key: PropTypes.string,
         lang: PropTypes.string,
     })),
+    current: PropTypes.string,
     langChange: PropTypes.func,
 }
 
