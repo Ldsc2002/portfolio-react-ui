@@ -64,9 +64,21 @@
     filter: brightness(1.1);
 }
 
+.imageBtn { 
+    margin: 0px;
+    padding: 0px;
+    background: none;
+    border: none;
+}
+
 .image {
     height: 30vh;
     margin-top: 10px;
+}
+
+.image:hover {
+    filter: brightness(0.9);
+    cursor: pointer;
 }
 
 .topBar {

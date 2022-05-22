@@ -30,7 +30,9 @@ function CarouselItem({ data, action }) {
             </div>
 
             <div className={classes.container}>
-                <img className={classes.image} alt={data.content.title} src={`/${data.content.image}`} />
+                <button className={classes.imageBtn} type="button" onClick={() => action(popUpContent)}>
+                    <img className={classes.image} alt={data.content.title} src={`/${data.content.image}`} />
+                </button>
 
                 <div className={classes.shortDesc}>{data.content.desc}</div>
             </div>
