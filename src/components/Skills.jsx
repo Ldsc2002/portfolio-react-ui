@@ -9,7 +9,7 @@ function Skills( {data} ) {
 
             <div className={classes.grid}>
                 {data.content.map((element) => (
-                    <SkillsItem key={element.name} name={element.name}/>
+                    <SkillsItem key={element.name} name={element.name} image={element.image} level={element.level}/>
                 ))}  
             </div>
         </div>
