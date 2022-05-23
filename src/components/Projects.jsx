@@ -14,7 +14,12 @@ function Projects({ data, action }) {
 }
 
 Projects.propTypes = {
-    data: PropTypes.any,
+    data: PropTypes.shape({
+        title: PropTypes.string,
+        content: PropTypes.arrayOf(
+            PropTypes.any,
+        ),
+    }),
     action: PropTypes.func,
 }
 
