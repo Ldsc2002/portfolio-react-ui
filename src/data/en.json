@@ -66,62 +66,62 @@
             { 
                 "name": "JS", 
                 "image": "cib:js",
-                "level": "5"  
+                "level": 5  
             },
             { 
                 "name": "HTML5", 
                 "image": "cib:html5",
-                "level": "5"  
+                "level": 5  
             },
             { 
                 "name": "React", 
                 "image": "cib:react",
-                "level": "5"  
+                "level": 5
             },
             { 
                 "name": "TypeScript", 
                 "image": "cib:typescript",
-                "level": "5"  
+                "level": 5  
             },
             { 
                 "name": "CSS", 
                 "image": "cib:css3",
-                "level": "5"  
+                "level": 5  
             },
             { 
                 "name": "Java", 
                 "image": "cib:java",
-                "level": "5"  
+                "level": 5  
             },
             { 
                 "name": "Python", 
                 "image": "cib:python",
-                "level": "5"  
+                "level": 5  
             },
             { 
                 "name": "Kotlin", 
                 "image": "cib:kotlin",
-                "level": "5"  
+                "level": 5  
             },
             { 
                 "name": "C++", 
                 "image": "bxl:c-plus-plus",
-                "level": "5"  
+                "level": 5  
             },
             { 
                 "name": "BrightScript", 
                 "image": "simple-icons:roku",
-                "level": "5"  
+                "level": 5  
             },
             { 
                 "name": "ARM Assembly", 
                 "image": "file-icons:assembly-arm",
-                "level": "5"  
+                "level": 5  
             },
             { 
                 "name": "SQL", 
                 "image": "ant-design:console-sql-outlined",
-                "level": "5"  
+                "level": 5  
             }
         ]
     },

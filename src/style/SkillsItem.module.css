@@ -16,4 +16,9 @@
 
 .title {
     font-size: 20px;
+    margin-top: 0px;
+}
+
+.progress {
+    margin-top: 20px;
 }

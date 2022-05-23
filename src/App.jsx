@@ -82,7 +82,7 @@ function App() {
 
             <Projects data={lang.Projects} action={popUpHandler} />
 
-            <Skills data={lang.Skills}/>
+            <Skills data={lang.Skills} />
 
             <Footer data={lang.Footer} />
 

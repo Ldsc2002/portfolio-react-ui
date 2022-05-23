@@ -1,0 +1,19 @@
+.container {
+    margin: 0px;
+    padding: 0px;
+}
+
+.progressBackground {
+    background-color: white;
+    color: slategray;
+    height: 10px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    overflow: hidden;
+}
+
+.progress {
+    background-color: slategray;
+    height: 100%;
+}
