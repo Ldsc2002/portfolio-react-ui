@@ -74,7 +74,6 @@ function App() {
             <Landing
                 currentLang={lang.Lang}
                 data={lang.Landing}
-                lang={AppData.getLanguages()}
                 langChange={languageChange}
             />
 
@@ -82,7 +81,7 @@ function App() {
 
             <Projects data={lang.Projects} action={popUpHandler} />
 
-            <Skills data={lang.SkillsTitle} />
+            <Skills data={lang.Skills} />
 
             <Footer />
 

@@ -6,9 +6,7 @@ import classes from '../style/Landing.module.css'
 import LanguageSelector from './common/LanguageSelector'
 import AppData from './utils/AppData'
 
-function Landing({
-    data, lang, currentLang, langChange,
-}) {
+function Landing({ data, currentLang, langChange }) {
     const animation = useRef(null)
     const typed = useRef(null)
     const firstUpdate = useRef(true)
@@ -49,7 +47,7 @@ function Landing({
                     <span className={classes.type} ref={animation} />
                 </div>
 
-                <LanguageSelector current={currentLang} languages={lang} langChange={langChange} />
+                <LanguageSelector current={currentLang} langChange={langChange} />
             </div>
         </div>
     )
@@ -57,10 +55,6 @@ function Landing({
 
 Landing.propTypes = {
     data: PropTypes.arrayOf(PropTypes.string),
-    lang: PropTypes.arrayOf(PropTypes.shape({
-        key: PropTypes.string,
-        lang: PropTypes.string,
-    })),
     currentLang: PropTypes.string,
     langChange: PropTypes.func,
 }
