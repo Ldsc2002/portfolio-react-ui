@@ -69,9 +69,7 @@ function Carousel({ data, content }) {
 
 Carousel.propTypes = {
     data: PropTypes.array,
-    content: PropTypes.arrayOf(
-        PropTypes.any,
-    ),
+    content: PropTypes.any,
 }
 
 export default Carousel
