@@ -51,29 +51,34 @@
         "title": "Skills",
         "content": [
             { 
-                "name": "React", 
-                "image": "Reddit.svg",
-                "level": "Reddit"  
-            },
-            { 
-                "name": "HTML", 
-                "image": "Reddit.svg",
-                "level": "Reddit"  
-            },
-            { 
                 "name": "JS", 
-                "image": "Reddit.svg",
-                "level": "Reddit"  
+                "image": "cib:js",
+                "level": "5"  
+            },
+            { 
+                "name": "HTML5", 
+                "image": "cib:html5",
+                "level": "5"  
+            },
+            { 
+                "name": "React", 
+                "image": "cib:react",
+                "level": "5"  
             },
             { 
                 "name": "Java", 
-                "image": "Reddit.svg",
-                "level": "Reddit"  
+                "image": "cib:java",
+                "level": "5"  
             },
             { 
                 "name": "Python", 
-                "image": "Reddit.svg",
-                "level": "Reddit"  
+                "image": "cib:python",
+                "level": "5"  
+            },
+            { 
+                "name": "CSS", 
+                "image": "cib:css3",
+                "level": "5"  
             }
         ]
     },
