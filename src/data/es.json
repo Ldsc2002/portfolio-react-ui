@@ -51,29 +51,30 @@
         "title": "Skills",
         "content": [
             { 
-                "id": 1,
-                "content": {
-                    "name": "React", 
-                    "image": "Reddit.svg",
-                    "level": "Reddit"
-                }
+                "name": "React", 
+                "image": "Reddit.svg",
+                "level": "Reddit"  
             },
             { 
-                "id": 2,
-                "content": {
-                    "name": "HTML5", 
-                    "image": "Reddit.svg",
-                    "level": "Reddit"
-                }
+                "name": "HTML", 
+                "image": "Reddit.svg",
+                "level": "Reddit"  
             },
             { 
-                "id": 3,
-                "content": {
-                    "name": "BrightScript", 
-                    "image": "Reddit.svg",
-                    "level": "Reddit"
-                }
-            }  
+                "name": "JS", 
+                "image": "Reddit.svg",
+                "level": "Reddit"  
+            },
+            { 
+                "name": "Java", 
+                "image": "Reddit.svg",
+                "level": "Reddit"  
+            },
+            { 
+                "name": "Python", 
+                "image": "Reddit.svg",
+                "level": "Reddit"  
+            }
         ]
     },
     "Footer": {
