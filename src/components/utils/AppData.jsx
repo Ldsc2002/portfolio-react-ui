@@ -15,7 +15,7 @@ function getValue(key) {
 const AppData = {
     getLanguages,
     isUnderConstruction,
-    getValue
+    getValue,
 }
 
 export default AppData

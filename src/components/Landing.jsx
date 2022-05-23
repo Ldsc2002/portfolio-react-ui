@@ -43,7 +43,7 @@ function Landing({
             <div className={classes.titleContainer}>
                 <Icon className={classes.icon} icon="la:laptop-code" />
 
-                <h1 className={classes.name}>{AppData.getValue("Name")}</h1>
+                <h1 className={classes.name}>{AppData.getValue('Name')}</h1>
 
                 <div className={classes.typeWrap}>
                     <span className={classes.type} ref={animation} />

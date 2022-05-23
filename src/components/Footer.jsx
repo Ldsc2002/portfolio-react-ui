@@ -1,19 +1,13 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import classes from '../style/Footer.module.css'
+import AppData from './utils/AppData'
 
-function Footer({ data }) {
+function Footer() {
     return (
         <footer className={classes.container}>
-            <p>{data.copyright}</p>
+            <p>{AppData.getValue('Footer').copyright}</p>
         </footer>
     )
-}
-
-Footer.propTypes = {
-    data: PropTypes.shape({
-        copyright: PropTypes.string,
-    }),
 }
 
 export default Footer

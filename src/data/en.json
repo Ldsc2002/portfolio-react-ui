@@ -1,9 +1,6 @@
 {
     "Lang": "en",
     "UnderConstruction": "This site is under construction",
-    "GitButton": {
-        "url": "https://github.com/Ldsc2002/portfolio-react-ui"
-    },
     "Landing": [
         "Front-End Developer",
         "Roku Developer",
@@ -57,72 +54,5 @@
             
         ]
     },
-    "Skills": {
-        "title": "Skills",
-        "content": [
-            { 
-                "name": "JS", 
-                "image": "cib:js",
-                "level": 8  
-            },
-            { 
-                "name": "HTML5", 
-                "image": "cib:html5",
-                "level": 9  
-            },
-            { 
-                "name": "React", 
-                "image": "cib:react",
-                "level": 7
-            },
-            { 
-                "name": "TypeScript", 
-                "image": "cib:typescript",
-                "level": 6  
-            },
-            { 
-                "name": "CSS", 
-                "image": "cib:css3",
-                "level": 9  
-            },
-            { 
-                "name": "Java", 
-                "image": "cib:java",
-                "level": 7  
-            },
-            { 
-                "name": "Python", 
-                "image": "cib:python",
-                "level": 9  
-            },
-            { 
-                "name": "Kotlin", 
-                "image": "cib:kotlin",
-                "level": 6  
-            },
-            { 
-                "name": "C++", 
-                "image": "bxl:c-plus-plus",
-                "level": 5  
-            },
-            { 
-                "name": "BrightScript", 
-                "image": "simple-icons:roku",
-                "level": 9  
-            },
-            { 
-                "name": "ARM Assembly", 
-                "image": "file-icons:assembly-arm",
-                "level": 4  
-            },
-            { 
-                "name": "SQL", 
-                "image": "ant-design:console-sql-outlined",
-                "level": 7  
-            }
-        ]
-    },
-    "Footer": {
-        "copyright": "Copyright © Luis Santos"
-    }
+    "SkillsTitle": "Skills"
 }

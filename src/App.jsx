@@ -69,7 +69,7 @@ function App() {
                 {popUpContent}
             </PopUp>
 
-            <GitHubButton data={lang.GitButton} />
+            <GitHubButton />
 
             <Landing
                 currentLang={lang.Lang}
@@ -82,9 +82,9 @@ function App() {
 
             <Projects data={lang.Projects} action={popUpHandler} />
 
-            <Skills data={lang.Skills} />
+            <Skills data={lang.SkillsTitle} />
 
-            <Footer data={lang.Footer} />
+            <Footer />
 
         </div>
     )
