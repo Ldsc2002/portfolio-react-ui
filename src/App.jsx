@@ -7,11 +7,11 @@ import PopUp from './components/common/PopUp'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
 import Skills from './components/Skills'
+import AppData from './components/utils/AppData'
 
 import UnderConstructionImg from './images/UnderConstruction.svg'
 import es from './data/es.json'
 import en from './data/en.json'
-import common from './data/common.json'
 
 const langOptions = {
     es,
@@ -34,7 +34,7 @@ function App() {
             message = lang.UnderConstruction
         }
 
-        if (common.UnderConstruction) {
+        if (AppData.isUnderConstruction) {
             const content = (
                 <div style={{
                     display: 'flex',
@@ -74,7 +74,7 @@ function App() {
             <Landing
                 currentLang={lang.Lang}
                 data={lang.Landing}
-                lang={common.languages}
+                lang={AppData.getLanguages()}
                 langChange={languageChange}
             />
 

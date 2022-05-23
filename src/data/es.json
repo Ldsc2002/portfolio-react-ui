@@ -4,15 +4,12 @@
     "GitButton": {
         "url": "https://github.com/Ldsc2002/portfolio-react-ui"
     },
-    "Landing": {
-        "name": "Luis Santos",   
-        "headerOptions": [
-            "Desarrollador de Front-End",
-            "Desarrollador de Roku",
-            "Code Reviewer",
-            "Líder Técnico"
-        ]
-    },
+    "Landing": [
+        "Desarrollador de Front-End",
+        "Desarrollador de Roku",
+        "Code Reviewer",
+        "Líder Técnico"
+    ],
     "About": {
         "title": "Sobre Mi",
         "optionalTitle": "Hola!",

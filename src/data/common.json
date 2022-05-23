@@ -1,6 +1,6 @@
 {
     "UnderConstruction": true,
-    "languages": [
+    "Languages": [
         {
             "key": "es",
             "lang": "Español"
@@ -9,5 +9,6 @@
             "key": "en",
             "lang": "English"
         }
-    ]
+    ],
+    "Name": "Luis Santos"   
 }

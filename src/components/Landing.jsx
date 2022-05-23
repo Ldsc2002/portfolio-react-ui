@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import Typed from 'typed.js'
 import classes from '../style/Landing.module.css'
 import LanguageSelector from './common/LanguageSelector'
+import AppData from './utils/AppData'
 
 function Landing({
     data, lang, currentLang, langChange,
@@ -13,7 +14,7 @@ function Landing({
     const firstUpdate = useRef(true)
 
     const options = {
-        strings: data.headerOptions,
+        strings: data,
         typeSpeed: 50,
         backSpeed: 50,
         loop: true,
@@ -22,7 +23,7 @@ function Landing({
     useLayoutEffect(() => {
         if (!firstUpdate.current) {
             typed.current.destroy()
-            options.strings = [...data.headerOptions]
+            options.strings = [...data]
             typed.current = new Typed(animation.current, options)
         } else {
             firstUpdate.current = false
@@ -42,7 +43,7 @@ function Landing({
             <div className={classes.titleContainer}>
                 <Icon className={classes.icon} icon="la:laptop-code" />
 
-                <h1 className={classes.name}>{data.name}</h1>
+                <h1 className={classes.name}>{AppData.getValue("Name")}</h1>
 
                 <div className={classes.typeWrap}>
                     <span className={classes.type} ref={animation} />
@@ -55,12 +56,7 @@ function Landing({
 }
 
 Landing.propTypes = {
-    data: PropTypes.shape({
-        name: PropTypes.string,
-        headerOptions: PropTypes.arrayOf(
-            PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-        ),
-    }),
+    data: PropTypes.arrayOf(PropTypes.string),
     lang: PropTypes.arrayOf(PropTypes.shape({
         key: PropTypes.string,
         lang: PropTypes.string,
