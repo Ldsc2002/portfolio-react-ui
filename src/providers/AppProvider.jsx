@@ -1,4 +1,9 @@
-import { createContext, useEffect, useState } from "react"
+/* eslint-disable react/jsx-no-constructed-context-values */
+
+import React, {
+    createContext, useEffect, useState,
+} from 'react'
+import PropTypes from 'prop-types'
 
 import es from '../data/es.json'
 import en from '../data/en.json'
@@ -11,26 +16,28 @@ const langOptions = {
     en,
 }
 
-const AppProvider = ({ children }) => {
+function AppProvider({ children }) {
     const [lang, setLang] = useState('es')
     const [langData, setLangData] = useState(langOptions[lang])
-    const [underConstructionMessage, setUnderConstructionMessage] = useState(langData.UnderConstruction)
+    const [
+        underConstructionMessage,
+        setUnderConstructionMessage] = useState(langData.UnderConstruction)
 
     const [about, setAbout] = useState(langData.About)
     const [landing, setLanding] = useState(langData.Landing)
     const [projects, setProjects] = useState(langData.Projects)
-    const [skills, setSkills] = useState({title: langData.Skills, content: common.SkillsContent})
+    const [skills, setSkills] = useState({ title: langData.Skills, content: common.SkillsContent })
 
     const underConstruction = common.UnderConstruction
 
     useEffect(() => {
-        if (localStorage.getItem("lang") !== null) {
-            setLang(localStorage.getItem("lang"))
+        if (localStorage.getItem('lang') !== null) {
+            setLang(localStorage.getItem('lang'))
         }
     }, [])
 
     useEffect(() => {
-        localStorage.setItem("lang", lang)
+        localStorage.setItem('lang', lang)
         setLangData(langOptions[lang])
     }, [lang])
 
@@ -39,7 +46,7 @@ const AppProvider = ({ children }) => {
         setAbout(langData.About)
         setLanding(langData.Landing)
         setProjects(langData.Projects)
-        setSkills({title: langData.Skills, content: common.SkillsContent})
+        setSkills({ title: langData.Skills, content: common.SkillsContent })
     }, [langData])
 
     const setLangHandler = (event) => {
@@ -54,7 +61,7 @@ const AppProvider = ({ children }) => {
         about,
         landing,
         projects,
-        skills
+        skills,
     }
 
     return (
@@ -62,6 +69,10 @@ const AppProvider = ({ children }) => {
             {children}
         </AppContext.Provider>
     )
+}
+
+AppProvider.propTypes = {
+    children: PropTypes.element,
 }
 
 export { AppProvider }

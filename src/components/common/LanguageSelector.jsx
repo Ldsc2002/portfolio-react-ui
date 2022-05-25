@@ -1,5 +1,4 @@
-import React, {useContext} from 'react'
-import PropTypes from 'prop-types'
+import React, { useContext } from 'react'
 import classes from '../../style/LanguageSelector.module.css'
 import AppData from '../utils/AppData'
 import AppContext from '../../providers/AppProvider'

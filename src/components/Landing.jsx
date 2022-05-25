@@ -1,4 +1,6 @@
-import React, { useLayoutEffect, useEffect, useRef, useContext } from 'react'
+import React, {
+    useLayoutEffect, useEffect, useRef, useContext,
+} from 'react'
 import { Icon } from '@iconify/react'
 import Typed from 'typed.js'
 import classes from '../style/Landing.module.css'

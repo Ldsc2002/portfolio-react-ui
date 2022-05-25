@@ -32,7 +32,7 @@ function App() {
         )
         setPopUpContent(content)
     }, [underConstructionMessage])
-    
+
     useEffect(() => {
         if (underConstruction) {
             setShowPopUp(true)

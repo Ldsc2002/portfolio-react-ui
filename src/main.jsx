@@ -7,5 +7,5 @@ import './style/Main.css'
 ReactDOM.createRoot(document.getElementById('root')).render(
     <AppProvider>
         <App />
-    </AppProvider>
+    </AppProvider>,
 )

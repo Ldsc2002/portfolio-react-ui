@@ -1,4 +1,4 @@
-import React, {useContext} from 'react'
+import React, { useContext } from 'react'
 import classes from '../style/Skills.module.css'
 import SkillsItem from './common/SkillsItem'
 import AppContext from '../providers/AppProvider'
