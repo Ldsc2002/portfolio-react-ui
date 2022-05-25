@@ -19,6 +19,7 @@ const AppProvider = ({ children }) => {
     const [about, setAbout] = useState(langData.About)
     const [landing, setLanding] = useState(langData.Landing)
     const [projects, setProjects] = useState(langData.Projects)
+    const [skills, setSkills] = useState({title: langData.Skills, content: common.SkillsContent})
 
     const underConstruction = common.UnderConstruction
 
@@ -38,6 +39,7 @@ const AppProvider = ({ children }) => {
         setAbout(langData.About)
         setLanding(langData.Landing)
         setProjects(langData.Projects)
+        setSkills({title: langData.Skills, content: common.SkillsContent})
     }, [langData])
 
     const setLangHandler = (event) => {
@@ -51,7 +53,8 @@ const AppProvider = ({ children }) => {
         underConstructionMessage,
         about,
         landing,
-        projects
+        projects,
+        skills
     }
 
     return (
