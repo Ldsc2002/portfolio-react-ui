@@ -1,29 +1,27 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import PropTypes from 'prop-types'
 import classes from '../../style/LanguageSelector.module.css'
 import AppData from '../utils/AppData'
+import AppContext from '../providers/AppProvider'
 
-function LanguageSelector({ current, langChange }) {
+function LanguageSelector() {
+    const { lang, setLangHandler } = useContext(AppContext)
+
     return (
         <div className={classes.buttonContainer}>
             {AppData.getLanguages().map((language) => (
                 <button
-                    className={`${language.key === current ? classes.active : classes.button}`}
+                    className={`${language.key === lang ? classes.active : classes.button}`}
                     type="button"
                     value={language.key}
                     key={language.key}
-                    onClick={langChange}
+                    onClick={setLangHandler}
                 >
                     {language.lang}
                 </button>
             ))}
         </div>
     )
-}
-
-LanguageSelector.propTypes = {
-    current: PropTypes.string,
-    langChange: PropTypes.func,
 }
 
 export default LanguageSelector
