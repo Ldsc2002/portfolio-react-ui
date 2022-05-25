@@ -5,11 +5,10 @@ import { Icon } from '@iconify/react'
 import Typed from 'typed.js'
 import classes from '../style/Landing.module.css'
 import LanguageSelector from './common/LanguageSelector'
-import AppData from './utils/AppData'
 import AppContext from '../providers/AppProvider'
 
 function Landing() {
-    const { landing } = useContext(AppContext)
+    const { landing, name } = useContext(AppContext)
 
     const animation = useRef(null)
     const typed = useRef(null)
@@ -45,7 +44,7 @@ function Landing() {
             <div className={classes.titleContainer}>
                 <Icon className={classes.icon} icon="la:laptop-code" />
 
-                <h1 className={classes.name}>{AppData.getValue('Name')}</h1>
+                <h1 className={classes.name}>{name}</h1>
 
                 <div className={classes.typeWrap}>
                     <span className={classes.type} ref={animation} />

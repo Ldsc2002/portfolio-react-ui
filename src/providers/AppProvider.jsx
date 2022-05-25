@@ -29,6 +29,10 @@ function AppProvider({ children }) {
     const [skills, setSkills] = useState({ title: langData.Skills, content: common.SkillsContent })
 
     const underConstruction = common.UnderConstruction
+    const name = common.Name
+    const languageOptions = common.Languages
+    const gitLink = common.GitButton
+    const footer = common.Footer
 
     useEffect(() => {
         if (localStorage.getItem('lang') !== null) {
@@ -58,6 +62,10 @@ function AppProvider({ children }) {
         setLangHandler,
         underConstruction,
         underConstructionMessage,
+        name,
+        languageOptions,
+        gitLink,
+        footer,
         about,
         landing,
         projects,
