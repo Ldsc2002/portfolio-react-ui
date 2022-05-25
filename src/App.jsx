@@ -15,7 +15,9 @@ import UnderConstructionImg from './images/UnderConstruction.svg'
 function App() {
     const [showPopUp, setShowPopUp] = useState(false)
     const [popUpContent, setPopUpContent] = useState()
-    const { underConstruction, underConstructionMessage, gitLink, footer } = useContext(AppContext)
+    const {
+        underConstruction, underConstructionMessage, gitLink, footer,
+    } = useContext(AppContext)
 
     useEffect(() => {
         const content = (
@@ -60,7 +62,7 @@ function App() {
 
             <Skills />
 
-            <Footer data={footer}/>
+            <Footer data={footer} />
 
         </div>
     )

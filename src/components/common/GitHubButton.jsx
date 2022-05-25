@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import classes from '../../style/GitHubButton.module.css'
 
 function GitHubButton({ link }) {
@@ -13,6 +14,10 @@ function GitHubButton({ link }) {
             </a>
         </div>
     )
+}
+
+GitHubButton.propTypes = {
+    link: PropTypes.string,
 }
 
 export default GitHubButton
