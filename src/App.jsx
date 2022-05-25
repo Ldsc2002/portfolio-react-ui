@@ -58,7 +58,7 @@ function App() {
 
             <About />
 
-            <Projects data={lang.Projects} action={popUpHandler} />
+            <Projects action={popUpHandler} />
 
             <Skills data={lang.Skills} />
 

@@ -14,9 +14,11 @@ const langOptions = {
 const AppProvider = ({ children }) => {
     const [lang, setLang] = useState('es')
     const [langData, setLangData] = useState(langOptions[lang])
+    const [underConstructionMessage, setUnderConstructionMessage] = useState(langData.UnderConstruction)
+
     const [about, setAbout] = useState(langData.About)
     const [landing, setLanding] = useState(langData.Landing)
-    const [underConstructionMessage, setUnderConstructionMessage] = useState(langData.UnderConstruction)
+    const [projects, setProjects] = useState(langData.Projects)
 
     const underConstruction = common.UnderConstruction
 
@@ -32,9 +34,10 @@ const AppProvider = ({ children }) => {
     }, [lang])
 
     useEffect(() => {
+        setUnderConstructionMessage(langData.UnderConstruction)
         setAbout(langData.About)
         setLanding(langData.Landing)
-        setUnderConstructionMessage(langData.UnderConstruction)
+        setProjects(langData.Projects)
     }, [langData])
 
     const setLangHandler = (event) => {
@@ -44,10 +47,11 @@ const AppProvider = ({ children }) => {
     const state = {
         lang,
         setLangHandler,
+        underConstruction,
+        underConstructionMessage,
         about,
         landing,
-        underConstruction,
-        underConstructionMessage
+        projects
     }
 
     return (
