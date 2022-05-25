@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import classes from '../style/About.module.css'
 import InfoWindow from './common/InfoWindow'
-import AppContext from './providers/AppProvider'
+import AppContext from '../providers/AppProvider'
 
 function About() {
     const { about } = useContext(AppContext)

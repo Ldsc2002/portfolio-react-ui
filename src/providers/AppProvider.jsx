@@ -1,8 +1,8 @@
 import { createContext, useEffect, useState } from "react"
 
-import es from '../../data/es.json'
-import en from '../../data/en.json'
-import common from '../../data/common.json'
+import es from '../data/es.json'
+import en from '../data/en.json'
+import common from '../data/common.json'
 
 const AppContext = createContext()
 
@@ -15,6 +15,10 @@ const AppProvider = ({ children }) => {
     const [lang, setLang] = useState('es')
     const [langData, setLangData] = useState(langOptions[lang])
     const [about, setAbout] = useState(langData.About)
+    const [landing, setLanding] = useState(langData.Landing)
+    const [underConstructionMessage, setUnderConstructionMessage] = useState(langData.UnderConstruction)
+
+    const underConstruction = common.UnderConstruction
 
     useEffect(() => {
         if (localStorage.getItem("lang") !== null) {
@@ -29,6 +33,8 @@ const AppProvider = ({ children }) => {
 
     useEffect(() => {
         setAbout(langData.About)
+        setLanding(langData.Landing)
+        setUnderConstructionMessage(langData.UnderConstruction)
     }, [langData])
 
     const setLangHandler = (event) => {
@@ -39,6 +45,9 @@ const AppProvider = ({ children }) => {
         lang,
         setLangHandler,
         about,
+        landing,
+        underConstruction,
+        underConstructionMessage
     }
 
     return (
