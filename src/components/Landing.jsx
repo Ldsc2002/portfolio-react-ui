@@ -1,18 +1,21 @@
-import React, { useLayoutEffect, useEffect, useRef } from 'react'
+import React, {
+    useLayoutEffect, useEffect, useRef, useContext,
+} from 'react'
 import { Icon } from '@iconify/react'
-import PropTypes from 'prop-types'
 import Typed from 'typed.js'
 import classes from '../style/Landing.module.css'
 import LanguageSelector from './common/LanguageSelector'
-import AppData from './utils/AppData'
+import AppContext from '../providers/AppProvider'
 
-function Landing({ data, currentLang, langChange }) {
+function Landing() {
+    const { landing, name } = useContext(AppContext)
+
     const animation = useRef(null)
     const typed = useRef(null)
     const firstUpdate = useRef(true)
 
     const options = {
-        strings: data,
+        strings: landing,
         typeSpeed: 50,
         backSpeed: 50,
         loop: true,
@@ -21,7 +24,7 @@ function Landing({ data, currentLang, langChange }) {
     useLayoutEffect(() => {
         if (!firstUpdate.current) {
             typed.current.destroy()
-            options.strings = [...data]
+            options.strings = [...landing]
             typed.current = new Typed(animation.current, options)
         } else {
             firstUpdate.current = false
@@ -41,22 +44,16 @@ function Landing({ data, currentLang, langChange }) {
             <div className={classes.titleContainer}>
                 <Icon className={classes.icon} icon="la:laptop-code" />
 
-                <h1 className={classes.name}>{AppData.getValue('Name')}</h1>
+                <h1 className={classes.name}>{name}</h1>
 
                 <div className={classes.typeWrap}>
                     <span className={classes.type} ref={animation} />
                 </div>
 
-                <LanguageSelector current={currentLang} langChange={langChange} />
+                <LanguageSelector />
             </div>
         </div>
     )
-}
-
-Landing.propTypes = {
-    data: PropTypes.arrayOf(PropTypes.string),
-    currentLang: PropTypes.string,
-    langChange: PropTypes.func,
 }
 
 export default Landing

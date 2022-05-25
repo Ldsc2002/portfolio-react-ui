@@ -1,23 +1,17 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React, { useContext } from 'react'
 import classes from '../style/About.module.css'
 import InfoWindow from './common/InfoWindow'
+import AppContext from '../providers/AppProvider'
 
-function About({ data }) {
+function About() {
+    const { about } = useContext(AppContext)
+
     return (
         <div className={classes.container}>
-            <h2 className={classes.title}>{data.title}</h2>
-            <InfoWindow text={data.text} title={data.optionalTitle} />
+            <h2 className={classes.title}>{about.title}</h2>
+            <InfoWindow text={about.text} title={about.optionalTitle} />
         </div>
     )
-}
-
-About.propTypes = {
-    data: PropTypes.shape({
-        title: PropTypes.string,
-        optionalTitle: PropTypes.string,
-        text: PropTypes.string,
-    }),
 }
 
 export default About

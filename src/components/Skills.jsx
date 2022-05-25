@@ -1,16 +1,17 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React, { useContext } from 'react'
 import classes from '../style/Skills.module.css'
 import SkillsItem from './common/SkillsItem'
-import AppData from './utils/AppData'
+import AppContext from '../providers/AppProvider'
 
-function Skills({ data }) {
+function Skills() {
+    const { skills } = useContext(AppContext)
+
     return (
         <div className={classes.container}>
-            <h2 className={classes.title}>{data}</h2>
+            <h2 className={classes.title}>{skills.title}</h2>
 
             <div className={classes.grid}>
-                {AppData.getValue('SkillsContent').map((element) => (
+                {skills.content.map((element) => (
                     <SkillsItem
                         key={element.name}
                         name={element.name}
@@ -23,7 +24,4 @@ function Skills({ data }) {
     )
 }
 
-Skills.propTypes = {
-    data: PropTypes.string,
-}
 export default Skills

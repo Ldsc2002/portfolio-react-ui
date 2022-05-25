@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 
 import Landing from './components/Landing'
 import GitHubButton from './components/common/GitHubButton'
@@ -7,56 +7,39 @@ import PopUp from './components/common/PopUp'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
 import Skills from './components/Skills'
-import AppData from './components/utils/AppData'
+
+import AppContext from './providers/AppProvider'
 
 import UnderConstructionImg from './images/UnderConstruction.svg'
-import es from './data/es.json'
-import en from './data/en.json'
-
-const langOptions = {
-    es,
-    en,
-}
 
 function App() {
-    const [lang, setLang] = useState(es)
     const [showPopUp, setShowPopUp] = useState(false)
     const [popUpContent, setPopUpContent] = useState()
+    const {
+        underConstruction, underConstructionMessage, gitLink, footer,
+    } = useContext(AppContext)
 
     useEffect(() => {
-        const prevLang = localStorage.getItem('lang')
-        let message = ''
+        const content = (
+            <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+            }}
+            >
+                <img src={UnderConstructionImg} alt="" style={{ width: `${20}vh`, height: `${20}vh` }} />
+                <p style={{ fontSize: `${40}px` }}>{underConstructionMessage}</p>
+            </div>
+        )
+        setPopUpContent(content)
+    }, [underConstructionMessage])
 
-        if (prevLang !== null) {
-            setLang(langOptions[prevLang])
-            message = langOptions[prevLang].UnderConstruction
-        } else {
-            message = lang.UnderConstruction
-        }
-
-        if (AppData.isUnderConstruction) {
-            const content = (
-                <div style={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                }}
-                >
-                    <img src={UnderConstructionImg} alt="" style={{ width: `${20}vh`, height: `${20}vh` }} />
-                    <p style={{ fontSize: `${40}px` }}>{message}</p>
-                </div>
-            )
-
-            setPopUpContent(content)
+    useEffect(() => {
+        if (underConstruction) {
             setShowPopUp(true)
         }
     }, [])
-
-    const languageChange = (event) => {
-        localStorage.setItem('lang', event.target.value)
-        setLang(langOptions[event.target.value])
-    }
 
     function popUpHandler(content) {
         setPopUpContent(content)
@@ -69,21 +52,17 @@ function App() {
                 {popUpContent}
             </PopUp>
 
-            <GitHubButton />
+            <GitHubButton link={gitLink} />
 
-            <Landing
-                currentLang={lang.Lang}
-                data={lang.Landing}
-                langChange={languageChange}
-            />
+            <Landing />
 
-            <About data={lang.About} />
+            <About />
 
-            <Projects data={lang.Projects} action={popUpHandler} />
+            <Projects action={popUpHandler} />
 
-            <Skills data={lang.Skills} />
+            <Skills />
 
-            <Footer />
+            <Footer data={footer} />
 
         </div>
     )
