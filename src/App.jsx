@@ -11,10 +11,8 @@ import Skills from './components/Skills'
 import AppContext from './providers/AppProvider'
 
 import UnderConstructionImg from './images/UnderConstruction.svg'
-import es from './data/es.json'
 
 function App() {
-    const [lang, setLang] = useState(es)
     const [showPopUp, setShowPopUp] = useState(false)
     const [popUpContent, setPopUpContent] = useState()
     const { underConstruction, underConstructionMessage } = useContext(AppContext)
@@ -60,7 +58,7 @@ function App() {
 
             <Projects action={popUpHandler} />
 
-            <Skills data={lang.Skills} />
+            <Skills />
 
             <Footer />
 

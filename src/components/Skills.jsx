@@ -1,5 +1,4 @@
 import React, {useContext} from 'react'
-import PropTypes from 'prop-types'
 import classes from '../style/Skills.module.css'
 import SkillsItem from './common/SkillsItem'
 import AppContext from '../providers/AppProvider'
