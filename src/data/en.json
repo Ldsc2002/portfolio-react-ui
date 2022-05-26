@@ -10,7 +10,7 @@
     "About": {
         "title": "About Me",
         "optionalTitle": "Hi",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "text": "My name is Luis Santos and I am a student at Universiadad del Valle de Guatemala. I have always liked technology"
     },
     "Projects": {
         "title": "Projects",
@@ -20,7 +20,7 @@
                 "content": {
                     "title": "Reddit React UI", 
                     "image": "Projects/Reddit.svg",
-                    "desc": "Reddit",
+                    "desc": "A clone of Reddit's main page created with React, Webpack, and many other modern web technologies.",
                     "url": "http://juanelcaballo.club/20226/Reddit/"
                 }
             },
@@ -28,27 +28,27 @@
                 "id": 2,
                 "content": {
                     "title": "Struum Roku", 
-                    "image": "Projects/Reddit.svg", 
-                    "desc": "Descripcion2",
-                    "url": "http://juanelcaballo.club/20226/Reddit/"
+                    "image": "Projects/Struum.webp", 
+                    "desc": "Worked on Struum Roku as a junior developer, and later on, as the tech lead for the project.",
+                    "url": ""
                 }
             },
             { 
                 "id": 3,
                 "content": {
                     "title": "Pantaya Roku", 
-                    "image": "Projects/Reddit.svg", 
-                    "desc": "Descripcion3",
-                    "url": "http://juanelcaballo.club/20226/Reddit/"
+                    "image": "Projects/Pantaya.png", 
+                    "desc": "Worked on Pantaya Roku as a junior developer.",
+                    "url": ""
                 }
             }, 
             { 
                 "id": 4,
                 "content": {
                     "title": "Teatrix Roku", 
-                    "image": "Projects/Reddit.svg",
-                    "desc": "The internet's homepage recreated with React. The internet's homepage recreated with React.",
-                    "url": "http://juanelcaballo.club/20226/Reddit/"
+                    "image": "Projects/Teatrix.png",
+                    "desc": "Currently working on creating a new application for Roku, from the ground up.",
+                    "url": ""
                 }
             }
             
