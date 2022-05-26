@@ -75,6 +75,16 @@
         }
     ],
     "Footer": {
-        "copyright": "Copyright © Luis Santos"
+        "copyright": "Copyright © Luis Santos",
+        "socials": [
+            {
+                "img": "cib:linkedin",
+                "url": "https://www.linkedin.com/in/luis-santosc/"
+            },
+            {
+                "img": "cib:github",
+                "url": "https://github.com/Ldsc2002"
+            }
+        ]
     }
 }
