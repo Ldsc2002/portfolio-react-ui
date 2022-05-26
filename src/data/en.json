@@ -10,7 +10,7 @@
     "About": {
         "title": "About Me",
         "optionalTitle": "Hi",
-        "text": "My name is Luis Santos and I am a student at Universiadad del Valle de Guatemala. I have always liked technology"
+        "text": "My name is Luis Diego Santos and I am a student at Universiadad del Valle de Guatemala. An avid enthusiast of anything related to technology, I want to create the software I always wished I had as a user. My hobbies include listening to music on obsolete physical formats, mountain biking, and repairing anything broken I can get my hands on. If I am not programming something new, you can probably find me recording from vinyl to cassettes."
     },
     "Projects": {
         "title": "Projects",
@@ -51,7 +51,6 @@
                     "url": ""
                 }
             }
-            
         ]
     },
     "Skills": "Skills"

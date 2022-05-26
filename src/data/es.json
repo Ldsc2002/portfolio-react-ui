@@ -10,7 +10,7 @@
     "About": {
         "title": "Sobre Mi",
         "optionalTitle": "Hola!",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "text": "Mi nombre es Luis Diego Santos y soy un estudiante en la Universidad del Valle de Guatemala. Siempre me ha apacionado la tecnología, razón por la cual ahora quiero crear las soluciones de software que siempre deseé como usuario. Mis pasantiempos incluyen escuchar música en formas obsoletos, el ciclismo de montaña, y arreglar cualquier cosa que encuentre y requiera reparaciones. Si no no estoy programando algo, probablemente me pueden encontrar grabando discos de vinílo a cassettes."
     },
     "Projects": {
         "title": "Proyectos",
@@ -18,25 +18,37 @@
             { 
                 "id": 1,
                 "content": {
-                    "title": "Testing1", 
-                    "image": "Favicon.svg",  
-                    "desc": "Descripcion1"
+                    "title": "Reddit React UI", 
+                    "image": "Projects/Reddit.svg",
+                    "desc": "La página principal de Reddit recreada utilizando tecnologias modernas para web como React y Webpack.",
+                    "url": "http://juanelcaballo.club/20226/Reddit/"
                 }
             },
             { 
                 "id": 2,
                 "content": {
-                    "title": "Testing2", 
-                    "image": "Favicon.svg", 
-                    "desc": "Descripcion2"
+                    "title": "Struum Roku", 
+                    "image": "Projects/Struum.webp", 
+                    "desc": "Trabajé en Struum Roku como un desarrollador junior, y poco tiempo después, como el lider técnico del proyecto.",
+                    "url": ""
                 }
             },
             { 
                 "id": 3,
                 "content": {
-                    "title": "Testing3", 
-                    "image": "Favicon.svg",  
-                    "desc": "Descripcion3"
+                    "title": "Pantaya Roku", 
+                    "image": "Projects/Pantaya.png", 
+                    "desc": "Trabajé en Pantaya Roku como un desarrollador junior.",
+                    "url": ""
+                }
+            }, 
+            { 
+                "id": 4,
+                "content": {
+                    "title": "Teatrix Roku", 
+                    "image": "Projects/Teatrix.png",
+                    "desc": "Actualmente estoy trabajando en una nueva versión de la aplicación de Teatrix para Roku, desde cero.",
+                    "url": ""
                 }
             }
         ]
