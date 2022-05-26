@@ -1,19 +1,15 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React, { useContext } from 'react'
 import classes from '../style/Footer.module.css'
+import AppContext from '../providers/AppProvider'
 
-function Footer({ data }) {
+function Footer() {
+    const { footer } = useContext(AppContext)
+
     return (
         <footer className={classes.container}>
-            <p>{data.copyright}</p>
+            <p>{footer.copyright}</p>
         </footer>
     )
-}
-
-Footer.propTypes = {
-    data: PropTypes.shape({
-        copyright: PropTypes.string,
-    }),
 }
 
 export default Footer

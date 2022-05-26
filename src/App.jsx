@@ -16,7 +16,7 @@ function App() {
     const [showPopUp, setShowPopUp] = useState(false)
     const [popUpContent, setPopUpContent] = useState()
     const {
-        underConstruction, underConstructionMessage, gitLink, footer,
+        underConstruction, underConstructionMessage,
     } = useContext(AppContext)
 
     useEffect(() => {
@@ -52,7 +52,7 @@ function App() {
                 {popUpContent}
             </PopUp>
 
-            <GitHubButton link={gitLink} />
+            <GitHubButton/>
 
             <Landing />
 
@@ -62,7 +62,7 @@ function App() {
 
             <Skills />
 
-            <Footer data={footer} />
+            <Footer />
 
         </div>
     )
