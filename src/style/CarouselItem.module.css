@@ -75,8 +75,9 @@
 }
 
 .image {
-    height: 30vh;
+    width: 30vh;
     margin-top: 10px;
+    max-width: 100%;
 }
 
 .image:hover {
@@ -127,4 +128,8 @@
 .button:hover {
     filter: brightness(0.8);
     cursor: pointer;
+}
+
+.displayNone {
+    display: none;
 }
